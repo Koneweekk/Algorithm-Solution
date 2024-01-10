@@ -4,4 +4,4 @@
 
 |Mon|Tue|Wed|Thr|Fri|Sat|
 |---|---|---|---|---|---|
-||[Solved !](./24_01/240109_solution.md)|||||
+||[Solved](./24_01/240109_solution.md)|[Solved](./24_01/240110_solution.md)||||
