@@ -1,6 +1,6 @@
 # 240109 문제풀이
 
-## 두 수 비교하기(백준)
+## 두 수 비교하기 (백준)
 
 카테고리 : 조건문
 
@@ -27,6 +27,7 @@ console.log(answer);
 
 [문제 링크](https://www.acmicpc.net/problem/1330) 
 
+<hr>
 
 ## 시험 성적 (백준)
 
@@ -52,6 +53,7 @@ console.log(grade);
 
 [문제 링크](https://www.acmicpc.net/problem/9498)
 
+<hr>
 
 ## 윤년 (백준)
 
@@ -74,6 +76,7 @@ if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ) {
 
 [문제 링크](https://www.acmicpc.net/problem/2753) 
 
+<hr>
 
 ## 사분면 고르기 (백준)
 
@@ -112,6 +115,7 @@ rl.on("line", function (line) {
 
 [문제 링크](https://www.acmicpc.net/problem/14681)
 
+<hr>
 
 ## 알람 시계 (백준)
 
@@ -133,6 +137,7 @@ console.log(h, m);
 
 [문제 링크](https://www.acmicpc.net/problem/2884) 
 
+<hr>
 
 ## 오븐 시계 (백준)
 
@@ -155,6 +160,7 @@ console.log(h, m);
 
 [문제 링크](https://www.acmicpc.net/problem/2525)
 
+<hr>
 
 ## 주사위 세개 (백준)
 
@@ -184,3 +190,5 @@ console.log(price)
 ```
 
 [문제 링크](https://www.acmicpc.net/problem/2480) 
+
+<hr>
