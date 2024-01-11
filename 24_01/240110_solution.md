@@ -22,7 +22,7 @@ console.log(totalPrice === 0? 'Yes' : 'No' );
 
 [문제 링크](https://www.acmicpc.net/problem/25304) 
 
-<hr>
+<hr><br>
 
 ## 빠른 A+B (백준)
 
@@ -52,7 +52,7 @@ console.log(answer);
 
 [문제 링크](https://www.acmicpc.net/problem/15552) 
 
-<hr>
+<hr><br>
 
 ## 별 찍기 - 2 (백준)
 
@@ -79,7 +79,7 @@ console.log(answer);
 
 [문제 링크](https://www.acmicpc.net/problem/2439) 
 
-<hr>
+<hr><br>
 
 ## 공 바꾸기 (백준)
 
@@ -112,7 +112,7 @@ console.log(arr.join(' '))
 
 [문제 링크](https://www.acmicpc.net/problem/10813) 
 
-<hr>
+<hr><br>
 
 ## 나머지 (백준)
 
@@ -142,7 +142,7 @@ console.log(answer);
 
 [문제 링크](https://www.acmicpc.net/problem/3052) 
 
-<hr>
+<hr><br>
 
 ## 바구니 뒤집기 (백준)
 
@@ -172,7 +172,7 @@ console.log(basket.join(' '))
 
 [문제 링크](https://www.acmicpc.net/problem/10811) 
 
-<hr>
+<hr><br>
 
 ## 평균 (백준)
 
