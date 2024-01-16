@@ -10,4 +10,4 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|[Click](./24_01/240115_solution.md)|||||
+|[Click](./24_01/240115_solution.md)|[Click](./24_01/240116_solution.md)||||
