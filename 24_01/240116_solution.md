@@ -166,6 +166,6 @@ console.log(totalArea);
 주의 사항
 - 마찬가지로 이중배열을 다룰 땐 행들이 같은 주소를 참조하지 않도록 해야합니다.
 
-[문제 링크](https://www.acmicpc.net/problem/10798) 
+[문제 링크](https://www.acmicpc.net/problem/2563) 
 
 <hr><br>
