@@ -11,3 +11,9 @@
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
 |[Click](./24_01/240115_solution.md)|[Click](./24_01/240116_solution.md)|[Click](./24_01/240117_solution.md)|[Click](./24_01/240118_solution.md)||
+
+## Week 3 (24.01.22 ~ 24.01.26)
+
+|Mon|Tue|Wed|Thr|Fri|
+|---|---|---|---|---|
+|[Click](./24_01/240122_solution.md)|||||
