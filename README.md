@@ -17,3 +17,9 @@
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
 |[Click](./24_01/240122_solution.md)|||||
+
+## Week 4 (24.01.29 ~ 24.02.02)
+
+|Mon|Tue|Wed|Thr|Fri|
+|---|---|---|---|---|
+|[Click](./24_01/240129_solution.md)|||||
