@@ -101,7 +101,7 @@ const bracketsMatch = {"(": ")", "[": "]"}
 for (let i = 0; i < input.length; i++) {
   // 관련 변수 설정
   const sentence = input[i];
-  const bracketStack = ["empty"];
+  const bracketStack = [];
   let isValid = true
   // 종료조건
   if (sentence[0] === ".") break;
@@ -121,7 +121,7 @@ for (let i = 0; i < input.length; i++) {
       } 
     }
   }
-  answer += bracketStack.length === 1 && isValid? "yes\n" : "no\n"
+  answer += bracketStack.length === 0 && isValid? "yes\n" : "no\n"
 }
 
 console.log(answer.trim())
