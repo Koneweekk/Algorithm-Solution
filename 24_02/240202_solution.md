@@ -86,81 +86,69 @@ const [ N, M ] = input[0].split(" ").map(v => Number(v.trim()));
 
 // 미로의 상태
 const maze = Array(N);
-for (let i = 1; i <= M; i++) {
+for (let i = 1; i <= N; i++) {
   const row = input[i].trim().split("");
   maze[i-1] = row;
 }
 
 // 현재 불의 위치와 지훈이의 위치를 기록
-let startPoint = []
-const queue = [[]]
-let rear = 1;
-let front = 0;
+let queue = ["start"]
 for (let row = 0; row < N; row++) {
   for (let col = 0; col < M; col++) {
     // 지훈이의 위치를 가장 앞에 넣어줌
     if (maze[row][col] === "J") {
-      queue[0] = ["J", row, col]
-      startPoint = [row, col]
+      queue[0] = [row, col]
     // 불의 위치는 지훈이 뒤로 넣어줌
     } else if (maze[row][col] === "F") {
-      queue.push(["F", row, col])
-      rear++;
+      queue.push([row, col])
     }
   }
 }
 
 // bfs를 통해 최소 시간 구하기
 const direction = [[1, 0], [0, 1], [-1, 0], [0, -1]]  // 동서남북 탐색을 위한 객체
-let isPossible = false;
-while (front !== rear) {
-  // 움직이는 대상, 행, 열, 현재 위치까지의 최단 거리
-  const [target, row, col] = queue[front];
-  // 움직이는 대상이 지훈이일 경우
-  if (target === "J") {
-    // 가장 자리에 도달한 경우 출력 후 반복문 종료
-    if (row === 0 || row === N-1 || col === 0 || col === M-1) {
-      isPossible = true;
-      console.log(Math.abs(startPoint[0] - row) + Math.abs(startPoint[1] - col) + 1);
-      break;
-    }
-    // 현재 위치의 사방을 탐색
+let result = "IMPOSSIBLE";
+let minDist = 1;
+bfs: while (queue.length > 0) {
+  // 다음 거리의 노드들을 저장할 배열
+  const nextQueue = [];
+  // 현재 거리의 노드들만 탐색
+  for (let i = 0; i < queue.length; i++) {
+    // 현재 탐색 노드의 행, 열
+    const [ r, c ] = queue[i];
+    // 사방을 탐색
     for (const d of direction) {
-      // 현재 위치로부터 탐색할 좌표
-      const newRow = row + d[0];
-      const newCol = col + d[1];
-      // 좌표가 유효 범위를 벗어난 경우
-      if (newRow < 0 || newRow >= N || newCol < 0 || newCol >= M) continue;
-      // 지훈이가 이동할 수 있는 칸일 경우 지훈이 이동
-      if (maze[newRow][newCol] === ".") {
-        queue.push(["J", newRow, newCol])
-        rear++;
+      const [ nr, nc ] = [ r + d[0], c + d[1] ]
+      // 현재 위치가 지훈의 위치일 경우
+      if (maze[r][c] === "J") {
+        // 지훈이가 탈출할 수 위치일 경우
+        if ( nr < 0 || nr >= N || nc < 0 || nc >= M ) {
+          result = minDist;
+          break bfs;
+        }
+        // 지훈이 이동
+        if (maze[nr][nc] === ".") {
+          maze[nr][nc] = "J";
+          nextQueue.push([nr, nc])
+        }
+      // 현재 위치가 불의 위치인 경우
+      } else if (maze[r][c] === "F") {
+        // 유효한 위치 X
+        if ( nr < 0 || nr >= N || nc < 0 || nc >= M ) continue;
+        // 불 이동
+        if (maze[nr][nc] === "." || maze[nr][nc] === "J") {
+          maze[nr][nc] = "F";
+          nextQueue.push([nr, nc])
+        }
       }
     }
   }
-  // 움직이는 대상이 불일 경우
-  if (target === "F") {
-    // 현재 위치의 사방을 탐색
-    for (const d of direction) {
-      // 현재 위치로부터 탐색할 좌표
-      const newRow = row + d[0];
-      const newCol = col + d[1];
-      // 유효하지 않은 좌표일 경우
-      if (newRow < 0 || newRow >= N || newCol < 0 || newCol >= M) continue;
-      // 벽이 아닌 경우 불 표시
-      if (maze[newRow][newRow] === "J" || maze[newRow][newCol] === ".") {
-        queue.push(["F", newRow, newRow])
-        maze[newRow][newCol] = "F";
-        rear++;
-      }
-    }
-  }
-  queue[front] = 0
-  front ++;
+  queue = nextQueue;
+  minDist++;
 }
 
 // 탈출이 불가능할 경우
-if (!isPossible) console.log("IMPOSSIBLE")
+console.log(result)
 ```
 
 [문제 링크](https://www.acmicpc.net/problem/4179)
