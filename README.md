@@ -28,4 +28,4 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|[Click](./24_02/240205_solution.md)|[Click](./24_02/240206_solution.md)||||
+|[Click](./24_02/240205_solution.md)|[Click](./24_02/240206_solution.md)|[Click](./24_02/240207_solution.md)|||
