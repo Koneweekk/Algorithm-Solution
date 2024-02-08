@@ -1,56 +1,58 @@
-# 240206 문제풀이
+# 240207 문제풀이
 
-## 덱 2 (백준)
+## queuestack (백준)
+
+카테고리 : 자료 구조, 큐, 스텍, 덱
+
+풀이코드
+```js
+const file = process.platform === 'linux' ? '/dev/stdin' : 'example.txt';
+let input = require('fs').readFileSync(file).toString().split('\n');
+
+// 입력값 변수에 할당
+const N = Number(input[0].trim());
+const M = Number(input[3].trim());
+const queueStack = input[1].split(" ").map(v => Number(v.trim()));
+const arr1 = input[2].split(" ").map(v => Number(v.trim()));
+const arr2 = input[4].split(" ").map(v => Number(v.trim()));
+
+// 큐에 들어간 자료들만 추려내기
+let queue = [];
+for (let i = N-1; i >= 0; i--) {
+  if (!queueStack[i]) queue.push(arr1[i]);
+}
+
+// 큐에 추가 자료 삽입하기
+queue.push(...arr2)
+
+// M개의 개수 만큼 뽑아내서 출력
+console.log(queue.slice(0, M).join(" "))
+```
+
+[문제 링크](https://www.acmicpc.net/problem/24511)
+
+<hr><br>
+
+## 풍선 터뜨리기 (백준)
 
 카테고리 : 자료 구조, 덱
 
 풀이코드
-```js
-const file = process.platform === "linux" ? "/dev/stdin" : "example.txt";
-let input = require("fs").readFileSync(file).toString().split("\n");
+```python
+N = int(input())
+balloons = [(i+1, v) for i, v in enumerate(map(int, input().split()))]
 
-const N = Number(input[0].trim());
+now_loc = 0
+result = ["1"]
+while N > 1:
+  N -= 1
+  target = balloons.pop(now_loc)
+  move = target[1] - 1 if target[1] > 0 else target[1]
+  next_loc = ( now_loc + move + N * N ) % N
+  result.append(str(balloons[next_loc][0]))
+  now_loc = next_loc
 
-const deque = Array(2 * N - 1);
-let front = rear = N - 1
-
-let result = "";
-for (let i = 1; i <= N; i++) {
-  const command = input[i].split(" ").map(v => Number(v.trim()));
-  switch (command[0]) {
-    case 1:
-      deque[front--] = command[1];
-      break;
-    case 2:
-      deque[++rear] = command[1];
-      break;
-    case 3:
-      result += `${front === rear? -1 : deque[++front]}\n`
-      break;
-    case 4:
-      result += `${front === rear? -1 : deque[rear--]}\n`
-      break;
-    case 5:
-      result += `${rear - front}\n`
-      break;
-    case 6:
-      result += `${front === rear? 1 : 0}\n`
-      break;
-    case 7:
-      result += `${front === rear? -1 : deque[front + 1]}\n`
-      break;
-    case 8:
-      result += `${front === rear? -1 : deque[rear]}\n`
-      break;
-    default:
-      break;
-  }
-}
-
-console.log(result.trim());
-
+print(" ".join(result))
 ```
 
-[문제 링크](https://www.acmicpc.net/problem/28279)
-
-<hr><br>
+[문제 링크](https://www.acmicpc.net/problem/2346)
