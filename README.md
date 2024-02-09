@@ -4,19 +4,19 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-||[Click](./24_01/240109_solution.md)|[Click](./24_01/240110_solution.md)|[Click](./24_01/240111_solution.md)||
+||[Click](./24_01/240109_solution.md)|[Click](./24_01/240110_solution.md)|[Click](./24_01/240111_solution.md)|😥|
 
 ## Week 2 (24.01.15 ~ 24.01.19)
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|[Click](./24_01/240115_solution.md)|[Click](./24_01/240116_solution.md)|[Click](./24_01/240117_solution.md)|[Click](./24_01/240118_solution.md)||
+|[Click](./24_01/240115_solution.md)|[Click](./24_01/240116_solution.md)|[Click](./24_01/240117_solution.md)|[Click](./24_01/240118_solution.md)|😥|
 
 ## Week 3 (24.01.22 ~ 24.01.26)
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|[Click](./24_01/240122_solution.md)|||||
+|[Click](./24_01/240122_solution.md)|😥|😥|😥|😥|
 
 ## Week 4 (24.01.29 ~ 24.02.02)
 
@@ -28,4 +28,10 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|[Click](./24_02/240205_solution.md)|[Click](./24_02/240206_solution.md)|[Click](./24_02/240207_solution.md)|[Click](./24_02/240208_solution.md)||
+|[Click](./24_02/240205_solution.md)|[Click](./24_02/240206_solution.md)|[Click](./24_02/240207_solution.md)|[Click](./24_02/240208_solution.md)|🧧|
+
+## Week 6 (24.02.12 ~ 24.02.16)
+
+|Mon|Tue|Wed|Thr|Fri|
+|---|---|---|---|---|
+|🧧|||||
