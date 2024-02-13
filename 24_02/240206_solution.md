@@ -48,7 +48,6 @@ for (let i = 1; i <= N; i++) {
 }
 
 console.log(result.trim());
-
 ```
 
 [문제 링크](https://www.acmicpc.net/problem/28279)
