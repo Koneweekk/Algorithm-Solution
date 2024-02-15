@@ -34,4 +34,4 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|🧧|[Click](./24_02/240213_solution.md)|[Click](./24_02/240214_solution.md)|||
+|🧧|[Click](./24_02/240213_solution.md)|[Click](./24_02/240214_solution.md)|[Click](./24_02/240215_solution.md)||
