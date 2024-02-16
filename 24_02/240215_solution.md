@@ -1,6 +1,6 @@
-# 240214 문제풀이
+# 240215 문제풀이
 
-## [키로거](https://www.acmicpc.net/problem/5397) (백준)
+## [키로거 (백준)](https://www.acmicpc.net/problem/5397)
 
 카테고리 : 스택, 연결리스트, 자료구조
 
