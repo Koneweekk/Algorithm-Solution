@@ -60,5 +60,3 @@ for (let i = 1; i <= N; i++) {
 
 console.log(result.trim())
 ```
-
-<hr><br>

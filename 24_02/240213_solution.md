@@ -28,5 +28,3 @@ console.log(result.trim());
 ```
 
 [문제 링크](https://www.acmicpc.net/problem/11729)
-
-<hr><br>

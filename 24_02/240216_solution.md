@@ -60,5 +60,3 @@ for (let i = 1; i <= N; i++) {
 // 마지막 이모티콘 명단이 집계되지 않았으므로 집계하여 출력
 console.log(dancers.size)
 ```
-
-<hr><br>

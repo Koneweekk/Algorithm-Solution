@@ -73,5 +73,3 @@ console.log(result)
 ```
 
 [문제 링크](https://www.acmicpc.net/problem/1406)
-
-<hr><br>
