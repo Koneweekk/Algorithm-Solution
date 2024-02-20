@@ -34,4 +34,11 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|🧧|[Click](./24_02/240213_solution.md)|[Click](./24_02/240214_solution.md)|[Click](./24_02/240215_solution.md)||
+|🧧|[Click](./24_02/240213_solution.md)|[Click](./24_02/240214_solution.md)|[Click](./24_02/240215_solution.md)|[Click](./24_02/240216_solution.md)|
+
+## Week 7 (24.02.19 ~ 24.02.23)
+
+|Mon|Tue|Wed|Thr|Fri|
+|---|---|---|---|---|
+|[Click](./24_02/240219_solution.md)|[Click](./24_02/240220_solution.md)||||
+
