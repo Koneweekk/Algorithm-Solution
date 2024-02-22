@@ -40,5 +40,5 @@
 
 |Mon|Tue|Wed|Thr|Fri|
 |---|---|---|---|---|
-|[Click](./24_02/240219_solution.md)|[Click](./24_02/240220_solution.md)|[Click](./24_02/240221_solution.md)|||
+|[Click](./24_02/240219_solution.md)|[Click](./24_02/240220_solution.md)|[Click](./24_02/240221_solution.md)|[Click](./24_02/240222_solution.md)||
 
