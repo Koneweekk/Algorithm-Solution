@@ -1,7 +1,8 @@
+package boj_13335;
 import java.io.*;
 import java.util.*;
 
-class Main {
+public class Main {
     // 입출력 관련 필드
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
